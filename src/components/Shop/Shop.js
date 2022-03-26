@@ -5,6 +5,7 @@ import Product from '../Product/Product';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
 
     // Fetching products and add on products state
     useEffect(() => {
@@ -14,7 +15,16 @@ const Shop = () => {
     }, []);
 
     const manageAddToCart = selectedProduct => {
-        console.log(selectedProduct);
+        let newCart = [];
+        const exists = cart.find(product => product.id === selectedProduct.id);
+        if(exists) {
+            newCart = [...cart];
+        }
+        else {
+            newCart = [...cart, selectedProduct];
+        }
+
+        setCart(newCart);
     }
 
     return (
@@ -32,7 +42,7 @@ const Shop = () => {
                     }
                 </div>
                 <div className="mt-4 mt-md-0 cart-container">
-                    <Cart></Cart>
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
         </div>
