@@ -1,4 +1,10 @@
 .cart-container {
- min-width: 11rem;
- margin-left: 3rem;
+    min-width: 11rem;
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .cart-container {
+        margin-left: inherit;
+    }
 }

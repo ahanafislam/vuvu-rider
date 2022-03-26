@@ -21,7 +21,7 @@ const Shop = () => {
         <div className="container">
             <h4 className="mt-3 mb-4 text-center">Choose 4 Motorcycle</h4>
             <div className="d-md-flex justify-content-between">
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 product-container">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 product-container">
                     {
                         products.map(product => <Product
                             key={product.id}
@@ -31,7 +31,7 @@ const Shop = () => {
                         )
                     }
                 </div>
-                <div className="mt-4 mt-md-0 bg-light shadow cart-container">
+                <div className="mt-4 mt-md-0 cart-container">
                     <Cart></Cart>
                 </div>
             </div>

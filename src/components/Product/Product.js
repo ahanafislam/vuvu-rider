@@ -1,5 +1,8 @@
 import React from 'react';
 import './Product.css';
+// FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Product = (props) => {
     // Destructuring props
@@ -14,7 +17,10 @@ const Product = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">Price: ${price}</p>
-                    <button onClick={() => manageAddToCart(product)} className="btn btn-danger btn-sm">Add to Cart</button>
+                    <button onClick={() => manageAddToCart(product)} className="btn btn-danger btn-sm">
+                        <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+                        <span className="ms-2">Add to Cart</span>
+                    </button>
                 </div>
             </div>
         </div>
