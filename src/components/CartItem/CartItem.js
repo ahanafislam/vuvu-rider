@@ -1,6 +1,7 @@
 import React from 'react';
 
-const CartItem = ({name, img}) => {
+const CartItem = (props) => {
+    const {name, img} = props.cart;
     return (
         <div className="mb-3 text-start">
             <div className="row g-0">
@@ -11,6 +12,9 @@ const CartItem = ({name, img}) => {
                     <small className="ms-3">{name}</small>
                 </div>
             </div>
+            {
+                props.cart.message ? <small className="text-success">{props.cart.message}</small> : ""
+            }
         </div>
     );
 };

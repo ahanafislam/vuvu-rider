@@ -18,6 +18,10 @@ const Shop = () => {
     const manageAddToCart = selectedProduct => {
         let newCart = [];
         const exists = cart.find(product => product.id === selectedProduct.id);
+
+        // Delete message property from object if there have any property name of message
+        cart.forEach(obj => { delete obj.message});
+
         if(exists) {
             newCart = [...cart];
         }
@@ -32,7 +36,8 @@ const Shop = () => {
     const chooseOneProduct = () => {
         const randomNum = Math.floor((Math.random() * cart.length) + 1);
         const index = randomNum - 1;
-        let newCart = cart[index];
+        const newCart = cart[index];
+        newCart.message = "We Choose " + newCart.name + " For You.";
         setCart([newCart]);
     }
 

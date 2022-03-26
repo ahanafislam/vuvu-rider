@@ -12,8 +12,8 @@ const Cart = (props) => {
             {
                 cart.map(product => <CartItem
                     key={product.id}
-                    name={product.name}
-                    img={product.img}
+                    cart={product}
+                    cartLength={cart.length}
                     ></CartItem>)
             }
             <button onClick={chooseOneProduct} className="btn btn-sm btn-outline-danger mb-2">Choose 1 for me</button>
