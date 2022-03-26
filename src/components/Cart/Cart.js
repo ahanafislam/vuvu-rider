@@ -1,12 +1,11 @@
 import React from 'react';
+import "./Cart.css";
 
 const Cart = () => {
     return (
-        <div className="card shadow cart bg-light">
-            <div className="card-body">
-            <p>Selected Motorcycle</p>
-            <button className="btn btn-outline-dark btn-sm">Choose 1 for me</button>
-            </div>
+        <div className="cart">
+            <p className="cart-title">Selected Motorcycle</p>
+            <p>Suzuki GSX</p>
         </div>
     );
 };

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "623ebce32e6b2261874b1c9b",
+        "name": "Kawasaki ZX-10R",
+        "img": "https://www.webbikeworld.com/wp-content/uploads/2020/09/2022-Kawasaki-ZX-10R.jpg",
+        "price": 18199
+    },
+    {
+        "id": "623ebce3895e6136a358fc0f",
+        "name": "Yamaha YZF-R1",
+        "img": "https://www.webbikeworld.com/wp-content/uploads/2020/09/2022-Yamaha-R1-60th-Anniversary.jpg",
+        "price": 18099
+    },
+    {
+        "id": "623ebce3e7ef773231265292",
+        "name": "Ducati V4S",
+        "img": "https://www.webbikeworld.com/wp-content/uploads/2020/09/2022-Ducati-Panigale-V4S.png",
+        "price": 30809
+    },
+    {
+        "id": "623ebce35b576a81e379b24d",
+        "name": "Aprilia RS660",
+        "img": "https://www.webbikeworld.com/wp-content/uploads/2020/03/2022-Aprilia-RS660.jpg",
+        "price": 11299
+    },
+    {
+        "id": "623ebce31319c54e4a846d80",
+        "name": "Suzuki GSX-R1000R",
+        "img": "https://www.webbikeworld.com/wp-content/uploads/2020/09/2022-Suzuki-GSX-R1000R.jpg",
+        "price": 28842
+    },
+    {
+        "id": "623ebce3914a9c2ff3c0118d",
+        "name": "Honda CBR1000RR",
+        "img": "https://powersports.honda.com/street/supersport/-/media/products/family/cbr1000rr/trims/trim-main/cbr1000rr/2022/2022-cbr1000rr-grand_prix_red-650x380.png",
+        "price": 16499
+    },
+    {
+        "id": "623ebce3e8341b3de5f41211",
+        "name": "BMW M 1000 RR",
+        "img": "https://media.zigcdn.com/media/model/2021/Mar/bmw-m-1000-rr-abc_600x400.jpg",
+        "price": 58996
+    },
+    {
+        "id": "623ebce3fc5e154118043208",
+        "name": "Ducati Panigale V4",
+        "img": "https://media.zigcdn.com/media/model/2021/Jun/ducati-panigale-v4-asfvv_600x400.jpg",
+        "price": 38019
+    },
+    {
+        "id": "623ebce3a646c165f02bb743",
+        "name": "Harley Davidson Sportster S",
+        "img": "https://media.zigcdn.com/media/model/2021/Dec/hd-sportsrer-sd-right-side-view_600x400.jpg",
+        "price": 20976
+    }
+]

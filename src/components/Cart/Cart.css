@@ -1,0 +1,9 @@
+.cart{
+    position: sticky;
+    top: 0;
+    padding: 15px 20px;
+}
+
+.cart-title {
+    font-weight: 500;
+}
