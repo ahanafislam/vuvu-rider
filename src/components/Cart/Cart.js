@@ -4,7 +4,7 @@ import "./Cart.css";
 
 const Cart = (props) => {
     // Destructuring  props
-    const {cart, chooseOneProduct} = props;
+    const {cart, chooseOneProduct, clearCart} = props;
 
     return (
         <div className="cart shadow-sm">
@@ -17,7 +17,7 @@ const Cart = (props) => {
                     ></CartItem>)
             }
             <button onClick={chooseOneProduct} className="btn btn-sm btn-outline-danger mb-2">Choose 1 for me</button>
-            <button className="btn btn-sm btn-outline-primary">Choose Again</button>
+            <button onClick={clearCart} className="btn btn-sm btn-outline-primary">Choose Again</button>
         </div>
     );
 };

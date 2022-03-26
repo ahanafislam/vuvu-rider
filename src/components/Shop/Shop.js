@@ -36,6 +36,9 @@ const Shop = () => {
         setCart([newCart]);
     }
 
+    // Function for clear cart
+    const clearCart = () => setCart([]);
+
     return (
         <div className="container">
             <h4 className="mt-3 mb-4 text-center">Choose 4 Motorcycle</h4>
@@ -54,6 +57,7 @@ const Shop = () => {
                     <Cart
                         cart={cart}
                         chooseOneProduct={chooseOneProduct}
+                        clearCart={clearCart}
                     ></Cart>
                 </div>
             </div>
