@@ -14,6 +14,7 @@ const Shop = () => {
             .then(data => setProducts(data));
     }, []);
 
+    // Function For Add To Cart
     const manageAddToCart = selectedProduct => {
         let newCart = [];
         const exists = cart.find(product => product.id === selectedProduct.id);
@@ -25,6 +26,14 @@ const Shop = () => {
         }
 
         setCart(newCart);
+    }
+
+    // Function for random Choosing one product randomly
+    const chooseOneProduct = () => {
+        const randomNum = Math.floor((Math.random() * cart.length) + 1);
+        const index = randomNum - 1;
+        let newCart = cart[index];
+        setCart([newCart]);
     }
 
     return (
@@ -42,7 +51,10 @@ const Shop = () => {
                     }
                 </div>
                 <div className="mt-4 mt-md-0 cart-container">
-                    <Cart cart={cart}></Cart>
+                    <Cart
+                        cart={cart}
+                        chooseOneProduct={chooseOneProduct}
+                    ></Cart>
                 </div>
             </div>
         </div>
